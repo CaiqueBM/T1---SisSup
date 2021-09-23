@@ -1,9 +1,7 @@
 #include "triangulo.h"
 #include <math.h>
 
-
 using namespace std;
-
 
 Triangulos::Triangulos(int a, int b){
     lado1 = a;
@@ -15,8 +13,14 @@ int Triangulos::getHipotenusa() {
     return h;
 }
 
+Triangulos::Triangulos(int a, int b, int c) {
+    lado1 = a;
+    lado2 = b;
+    hipotenusa = c;
+}
+
 int Triangulos::getPerimetro() {
-    int perimetro = lado1 + lado2 + Triangulos::getHipotenusa();
+    int perimetro = lado1 + lado2 + hipotenusa;
     return perimetro;
 }
 

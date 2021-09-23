@@ -9,13 +9,11 @@ class Triangulos {
 
     public:
         Triangulos(int lado1, int lado2);
+        Triangulos(int lado1, int lado2, int hipotenusa);
+
         int getHipotenusa();
         int getPerimetro();
-        int getArea();
-        
-
-
-    
+        int getArea();    
 };
 
 #endif
