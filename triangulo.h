@@ -13,7 +13,9 @@ class Triangulos {
 
         int getHipotenusa();
         int getPerimetro();
-        int getArea();    
+        int getArea();
+        
+        static int Comparar(int area1, int area2);
 };
 
 #endif

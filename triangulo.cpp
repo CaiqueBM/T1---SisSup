@@ -28,3 +28,15 @@ int Triangulos::getArea() {
     int area = (lado1 * lado2)/2;
     return area;
 }
+
+int Triangulos::Comparar(int a, int b){
+    int maiorArea;
+    
+    if (a > b) {
+        maiorArea = a;
+    } else {
+        maiorArea = b;
+    }
+    
+    return maiorArea;
+}
