@@ -38,7 +38,7 @@ int main() {
         std::cout << j.getArea() << " m²" << endl;
 
     } else if (control == 3) {
-        int area1, area2, aux;
+        int area, area1, area2;
 
         for (int i=0;i < 2; i++) {
             cout << "------- Triangulo " << i+1 << " -------" << endl;
@@ -46,9 +46,6 @@ int main() {
             cin >> l1;
             cout << "Digite o lado 2: ";
             cin >> l2;
-
-            aux = (l1 *l2)/2;
-            cout << aux<< endl;
 
             if (i == 0){
                 Triangulos j(l1,l2);
@@ -60,12 +57,15 @@ int main() {
                 cout << "A area do triangulo " << i+1 << " é: " << area2 << endl;
             }
         }
-        std::cout << Triangulos::Comparar(area1, area2) << endl;
+        int maiorArea = Triangulos::Comparar(area1, area2);
+       
+        if (maiorArea == 1) {
+            area = area1;
+        } else {
+            area = area2;
+        }
+
+        std::cout << "A maior area é do triangulo " << maiorArea << " e ele tem " << area << " m²." << endl;
 
     }
- 
-
-
-
-
 }

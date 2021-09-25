@@ -33,10 +33,9 @@ int Triangulos::Comparar(int a, int b){
     int maiorArea;
     
     if (a > b) {
-        maiorArea = a;
+        maiorArea = 1;
     } else {
-        maiorArea = b;
+        maiorArea = 2;
     }
-    
     return maiorArea;
 }
